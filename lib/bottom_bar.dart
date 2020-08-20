@@ -13,7 +13,6 @@ class MyBottomBar extends StatefulWidget {
 class _MyBottomBarState extends State<MyBottomBar> {
   @override
   Widget build(BuildContext context) {
-    // setState(() {});
     return Container(
       // margin: EdgeInsets.symmetric(horizontal: 40, vertical: 30),
       height: 78.00,
@@ -33,7 +32,6 @@ class _MyBottomBarState extends State<MyBottomBar> {
 }
 
 class BottomBarButton extends StatefulWidget {
-  // final Icons icon;
   final IconData icon;
   BottomBarButton({this.icon});
   @override
@@ -43,11 +41,10 @@ class BottomBarButton extends StatefulWidget {
 class _BottomBarButtonState extends State<BottomBarButton> {
   changeState() {
     setState(() {
-      isSelected = isSelected ? !isSelected : !isSelected;
+      isSelected =!isSelected;
     });
   }
 
-  // bool isSelected = false;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
